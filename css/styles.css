@@ -7,7 +7,7 @@
 Колір адреси rgba(255, 255, 255, 0.6)
 Колір фону  #FFFFFF
 Колір фону другорядний  #F5F4FA
-Колр ону темний #2F303A */
+Колр фону темний #2F303A */
 
 
 :root {
@@ -23,7 +23,8 @@
 
 /* Body */
 body {
-    color: var(--primary-text-color)
+    color: var(--primary-text-color);
+    font-family: Roboto, sans-serif;
 }
 
 /* Logo */
@@ -33,14 +34,25 @@ body {
 .logo {
     color: var(--logo-black);
     text-decoration: none;
+    font-family: Raleway, sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
 }
 
 .logo-accent {
     color:var(--accent) ;
+    font-family: Raleway, sans-serif;
 }
 /* Navigation */
 .site-nav .link {
-color: var(--color-title);
+    color: var(--color-title);
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
 }
 .site-nav .link:hover,
 .site-nav .link:focus {
@@ -49,6 +61,11 @@ color: var(--color-title);
 
 .auth-nav .link {
     color: var(--primary-text-color);
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
 }
 
 .auth-nav .link:hover,
@@ -67,11 +84,38 @@ color: var(--color-title);
 
 .hero-title {
     color: var(--white);
+    font-family: 'Roboto';
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.5;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
 }
 
 .button {
     color:var(--white);
     background-color:var(--accent);
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+}
+
+.button-filter {
+    color: var(--color-title);
+    background-color: var(--background-color-secondary);
+}
+
+
+.button-filter:hover,
+.button-filter:focus {
+    color: var(--white);
+    background-color: var(--accent);
 }
 
 /* Main */
@@ -79,11 +123,31 @@ color: var(--color-title);
 /* Section Переваги */
 
 .section-title {
-    color:var(--color-title);
+    color: var(--color-title);
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
 }
 
 .title {
-    color:var(--color-title) ;
+    color: var(--color-title);
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+
+.text {
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
 }
 
 /* Section Наша команда */
@@ -94,17 +158,33 @@ color: var(--color-title);
 
 .name {
     color: var(--color-title);
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.2;
+    text-align: center;
+    letter-spacing: 0.03em;
 }
 
-/* .profession {
-    color: #757575;
-} */
+.profession {
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.2;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
 
 /* Footer */
 
 .logo-foot {
-color:var(--white);
-text-decoration: none;
+    color:var(--white);
+    text-decoration: none;
+    font-family: Raleway, sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
 }
 
 .footer {
@@ -116,4 +196,35 @@ text-decoration: none;
 
 .sity-adr {
     color: var(--white);
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+}
+
+.list .address{
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+}
+
+.name-project {
+    color: var(--color-title);
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+}
+
+.type-project {
+    color: var(--primary-text-color);
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1,8;
+    letter-spacing: 0.03em;
 }
