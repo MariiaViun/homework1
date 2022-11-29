@@ -1,5 +1,4 @@
-/* 
-Оснвний колір тексту #757575
+/*Оснвний колір тексту #757575
 Чорний заголовки  #212121
 Акцент  #2196F3
 Білий  #FFFFFF
@@ -104,11 +103,13 @@ body {
     align-items: center;
     text-align: center;
     letter-spacing: 0.06em;
+    cursor: pointer;
 }
 
 .button-filter {
     color: var(--color-title);
     background-color: var(--background-color-secondary);
+    cursor: pointer;
 }
 
 
