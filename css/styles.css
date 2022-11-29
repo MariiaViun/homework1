@@ -83,7 +83,6 @@ body {
 
 .hero-title {
     color: var(--white);
-    font-family: 'Roboto';
     font-weight: 900;
     font-size: 44px;
     line-height: 1.5;
@@ -104,12 +103,14 @@ body {
     text-align: center;
     letter-spacing: 0.06em;
     cursor: pointer;
+    font-family: inherit;
 }
 
 .button-filter {
     color: var(--color-title);
     background-color: var(--background-color-secondary);
     cursor: pointer;
+    font-family: inherit;
 }
 
 
@@ -125,7 +126,6 @@ body {
 
 .section-title {
     color: var(--color-title);
-    font-family: 'Roboto';
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
@@ -135,7 +135,6 @@ body {
 
 .title {
     color: var(--color-title);
-    font-family: 'Roboto';
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
@@ -144,8 +143,6 @@ body {
 }
 
 .text {
-    font-family: 'Roboto';
-    font-weight: 400;
     font-size: 14px;
     line-height: 24px;
     letter-spacing: 0.03em;
@@ -159,7 +156,6 @@ body {
 
 .name {
     color: var(--color-title);
-    font-family: 'Roboto';
     font-weight: 500;
     font-size: 16px;
     line-height: 1.2;
@@ -168,8 +164,6 @@ body {
 }
 
 .profession {
-    font-family: 'Roboto';
-    font-weight: 400;
     font-size: 16px;
     line-height: 1.2;
     text-align: center;
@@ -197,15 +191,12 @@ body {
 
 .sity-adr {
     color: var(--white);
-    font-family: 'Roboto';
-    font-weight: 400;
     font-size: 14px;
     line-height: 1.7;
     letter-spacing: 0.03em;
 }
 
 .list .address{
-    font-family: 'Roboto';
     font-weight: 400;
     font-size: 14px;
     line-height: 1.7;
@@ -214,7 +205,6 @@ body {
 
 .name-project {
     color: var(--color-title);
-    font-family: 'Roboto';
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
@@ -223,8 +213,6 @@ body {
 
 .type-project {
     color: var(--primary-text-color);
-    font-family: 'Roboto';
-    font-weight: 400;
     font-size: 16px;
     line-height: 1,8;
     letter-spacing: 0.03em;
