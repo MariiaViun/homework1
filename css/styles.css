@@ -95,6 +95,7 @@ body {
 }
 
 .button {
+    display: inline-block;
     color:var(--white);
     background-color:var(--accent);
     font-family: 'Roboto';
@@ -122,10 +123,13 @@ body {
 
 
 .button-filter {
+    display: inline-block;
     color: var(--color-title);
     background-color: var(--background-color-secondary);
     cursor: pointer;
     font-family: inherit;
+    border-radius: 4px;
+    border: 1px solid transparent;
 }
 
 
@@ -133,11 +137,27 @@ body {
 .button-filter:focus {
     color: var(--white);
     background-color: var(--accent);
+    border-radius: 4px;
+    border: 1px solid transparent;
+    font-family: inherit;
 }
 
 /* Main */
 
 /* Section Переваги */
+
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+  }
 
 .section-title {
     color: var(--color-title);
@@ -169,6 +189,10 @@ body {
     background-color: var(--background-color-secondary);
 }
 
+
+.list.team {
+    background-color: var(--white);
+}
 .name {
     color: var(--color-title);
     font-weight: 500;
@@ -204,6 +228,9 @@ body {
     color: var(--address-colol);
 }
 
+address {
+    font-style: normal;
+}
 .sity-adr {
     color: var(--white);
     font-size: 14px;
@@ -220,7 +247,7 @@ body {
 
 
 
-
+   /* Portfolio */
 .name-project {
     color: var(--color-title);
     font-weight: 700;
