@@ -1,13 +1,3 @@
-/*Оснвний колір тексту #757575
-Чорний заголовки  #212121
-Акцент  #2196F3
-Білий  #FFFFFF
-Чорний лого #000000
-Колір адреси rgba(255, 255, 255, 0.6)
-Колір фону  #FFFFFF
-Колір фону другорядний  #F5F4FA
-Колр фону темний #2F303A */
-
 
 :root {
 --primary-text-color: #757575;
@@ -28,6 +18,14 @@ body {
     background-color: var(--white);
 }
 
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: 1200px;
+    outline: 2px solid tomato 
+}
 /* Logo */
 .list {
     list-style: none;
@@ -45,6 +43,7 @@ body {
 .logo-accent {
     color:var(--accent) ;
 }
+
 /* Navigation */
 .site-nav .link {
     color: var(--color-title);
@@ -54,6 +53,13 @@ body {
     line-height: 1.14;
     letter-spacing: 0.02em;
 }
+.site-nav .link{
+    display: inline-block;
+}
+.link.current {
+    color: var(--accent);
+}
+
 .site-nav .link:hover,
 .site-nav .link:focus,
 .list .address:hover,
@@ -78,8 +84,8 @@ body {
 .link {
     text-decoration: none;
 }
-/* Hero */
 
+/* Hero */
 .hero {
     background-color: var(--background-color-dark);
 }
@@ -88,7 +94,7 @@ body {
     color: var(--white);
     font-weight: 900;
     font-size: 44px;
-    line-height: 1.5;
+    line-height: 1.36;
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
@@ -121,29 +127,7 @@ body {
     border:1px solid  var(--button-bg)
 }
 
-
-.button-filter {
-    display: inline-block;
-    color: var(--color-title);
-    background-color: var(--background-color-secondary);
-    cursor: pointer;
-    font-family: inherit;
-    border-radius: 4px;
-    border: 1px solid transparent;
-}
-
-
-.button-filter:hover,
-.button-filter:focus {
-    color: var(--white);
-    background-color: var(--accent);
-    border-radius: 4px;
-    border: 1px solid transparent;
-    font-family: inherit;
-}
-
 /* Main */
-
 /* Section Переваги */
 
 .visually-hidden {
@@ -189,10 +173,10 @@ body {
     background-color: var(--background-color-secondary);
 }
 
-
 .list.team {
     background-color: var(--white);
 }
+
 .name {
     color: var(--color-title);
     font-weight: 500;
@@ -245,9 +229,27 @@ address {
     letter-spacing: 0.03em;
 }
 
-
-
    /* Portfolio */
+
+   .button-filter {
+    display: inline-block;
+    color: var(--color-title);
+    background-color: var(--background-color-secondary);
+    cursor: pointer;
+    font-family: inherit;
+    border-radius: 4px;
+    border: 1px solid transparent;
+}
+
+.button-filter:hover,
+.button-filter:focus {
+    color: var(--white);
+    background-color: var(--accent);
+    border-radius: 4px;
+    border: 1px solid transparent;
+    font-family: inherit;
+}
+
 .name-project {
     color: var(--color-title);
     font-weight: 700;
@@ -259,6 +261,6 @@ address {
 .type-project {
     color: var(--primary-text-color);
     font-size: 16px;
-    line-height: 1,8;
+    line-height: 1.8;
     letter-spacing: 0.03em;
 }
