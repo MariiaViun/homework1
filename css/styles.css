@@ -88,9 +88,12 @@ body {
 /* Hero */
 .hero {
     background-color: var(--background-color-dark);
+    outline: 2px solid gold;
 }
 
 .hero-title {
+    margin-top: 0;
+    margin-bottom: 0;
     color: var(--white);
     font-weight: 900;
     font-size: 44px;
@@ -239,6 +242,9 @@ address {
     font-family: inherit;
     border-radius: 4px;
     border: 1px solid transparent;
+    padding: 6px 22px;
+    min-width: 67px;
+    text-align: center;
 }
 
 .button-filter:hover,
