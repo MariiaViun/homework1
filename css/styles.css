@@ -27,8 +27,7 @@ body {
     padding-right: 15px;
     width: 1200px;
 
-
-    background-color: aqua;
+outline: 2px solid blue;
     
 }
 
@@ -59,6 +58,20 @@ border-bottom: 1px solid var(--border-header);
 }
 
 /* Navigation */
+
+.site-nav {
+    display: flex;
+}
+
+.site-nav .item {
+    /* margin-right: 50px; */
+    outline: 1px solid magenta;
+}
+
+.site-nav .item:not(:last-child) {
+    margin-right: 50px;
+}
+
 .site-nav .link {
     color: var(--color-title);
     font-family: 'Roboto';
@@ -256,6 +269,13 @@ img {
 }
 
 /* Footer */
+
+.footer {
+    background-color: var(--background-color-dark);
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 .logo-foot {
     color:var(--white);
