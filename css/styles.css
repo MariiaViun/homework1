@@ -15,9 +15,12 @@
 
 /* Body */
 body {
+    width: 1600px;
     color: var(--primary-text-color);
     font-family: Roboto, sans-serif;
     background-color: var(--white);
+
+    outline: 2px solid maroon;
 }
 
 .container {
@@ -36,7 +39,7 @@ outline: 2px solid blue;
 
 /* Header */
 .page-header {
-border-bottom: 1px solid var(--border-header);
+    border-bottom: 1px solid var(--border-header);
 }
 
 /* Logo */
@@ -48,6 +51,11 @@ border-bottom: 1px solid var(--border-header);
     margin: 0;
 }
 .logo {
+    /* padding-top: 60px;
+    padding-right: 1240px;
+    padding-bottom: 160px;
+    padding-left: 215px; */
+
     color: var(--logo-black);
     text-decoration: none;
     font-family: Raleway, sans-serif;
@@ -142,15 +150,14 @@ border-bottom: 1px solid var(--border-header);
 }
 
 /* Hero */
-.hero {
+.section.hero {
     margin-left: auto;
     margin-right: auto;
 
     background-color: var(--background-color-dark);
     text-align: center;
-    width: 1200px;
+    width: 1600px;
     
-
     outline: 2px solid gold;
 }
 
@@ -350,17 +357,14 @@ outline: 1px solid darkolivegreen;
 
 .name-team {
   /* padding: 30px 70px 59px 71px; */
+  padding-top: 30px;
+  padding-bottom: 30px;
+  /* padding-right: auto;
+  padding-left: auto; */
   
   outline: 2px solid gold;
 }
 
-.name.igor {
-    padding: 0px 70px 59px 71px; 
-}
-
-.name-team.olga {
-    padding: 30px 83px 59px 83px;
-}
 
 .profession {
     font-size: 16px;
@@ -375,12 +379,24 @@ outline: 1px solid darkolivegreen;
 
 .footer {
     background-color: var(--background-color-dark);
-    width: 1200px;
+    width: 1600px;
+    padding-left: 215px;
+    padding-top: 60px;
+    padding-bottom: 0px;
+
+    /* height: 251px;
     margin-left: auto;
-    margin-right: auto;
+    margin-right: auto; */
 }
 
 .logo-foot {
+   
+   margin-top: 0;
+   margin-bottom: 28px;
+   /* padding-top: 60px; */
+
+   position: absolute;
+
     color:var(--white);
     text-decoration: none;
     font-family: Raleway, sans-serif;
@@ -388,11 +404,12 @@ outline: 1px solid darkolivegreen;
     font-size: 26px;
     line-height: 1.2;
     letter-spacing: 0.03em;
-    padding-top: 60px;
 }
 
-.footer {
-    background-color:var(--background-color-dark);
+
+.container.footer {
+    /* padding-top: 60px;
+    padding-bottom: 60px; */
 }
 .address {
     color: var(--address-colol);
@@ -401,11 +418,26 @@ outline: 1px solid darkolivegreen;
 address {
     font-style: normal;
 }
-.sity-adr {
+.sity-adr { 
+    padding-bottom: 0px;
+    padding-top: 20px;
+    margin-bottom: 0px;
+
+    /* margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 12px; */
+   
+    position: absolute;
+
     color: var(--white);
     font-size: 14px;
     line-height: 1.7;
     letter-spacing: 0.03em;
+}
+
+.mail {
+    /* margin-bottom: 12px; */
 }
 
 .list .address{
@@ -458,6 +490,6 @@ address {
     border-bottom: 1px solid var(--border-project);
 }
 
-.images {
+/* .images {
     margin-bottom: 30px;
-}
+} */
