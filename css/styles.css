@@ -32,10 +32,15 @@ body {
     
 
 outline: 2px solid blue;
-
-    
 }
 
+
+/* Скидання стфндартів для ul */
+.list {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+   }
 
 /* Header */
 .page-header {
@@ -379,10 +384,12 @@ outline: 1px solid darkolivegreen;
 
 .footer {
     background-color: var(--background-color-dark);
-    width: 1600px;
-    padding-left: 215px;
     padding-top: 60px;
-    padding-bottom: 0px;
+    padding-right: 1240px;
+    padding-bottom: 0px; 
+    padding-left: 215px;
+    
+    
 
     /* height: 251px;
     margin-left: auto;
@@ -391,10 +398,9 @@ outline: 1px solid darkolivegreen;
 
 .logo-foot {
    
-   margin-top: 0;
-   margin-bottom: 28px;
-   /* padding-top: 60px; */
-
+    margin-top: 0;
+    margin-bottom: 0; 
+    
    position: absolute;
 
     color:var(--white);
@@ -416,18 +422,21 @@ outline: 1px solid darkolivegreen;
 }
 
 address {
+    margin-top: 28px;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    width: 231px;
+
     font-style: normal;
 }
 .sity-adr { 
-    padding-bottom: 0px;
-    padding-top: 20px;
-    margin-bottom: 0px;
-
-    /* margin-left: 0;
-    margin-right: 0;
     margin-top: 0;
-    margin-bottom: 12px; */
-   
+    margin-right: 0;
+    margin-bottom: 12px;
+    margin-left: 0;
+    
+    
     position: absolute;
 
     color: var(--white);
@@ -436,9 +445,9 @@ address {
     letter-spacing: 0.03em;
 }
 
-.mail {
-    /* margin-bottom: 12px; */
-}
+/* .mail {
+    margin-bottom: 12px;
+} */
 
 .list .address{
     font-weight: 400;
@@ -448,6 +457,22 @@ address {
 }
 
    /* Portfolio */
+
+   .filters {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 0;
+    margin-bottom: 0;
+    
+   
+    outline: 2px solid forestgreen;
+}
+
+   .filters > li {
+    margin-right: 8px;
+}
+
 
    .button-filter {
     display: inline-block;
@@ -493,3 +518,13 @@ address {
 /* .images {
     margin-bottom: 30px;
 } */
+
+
+
+
+h2, p {
+    margin-top: 0;
+    margin-bottom: 0;
+   }
+
+   
