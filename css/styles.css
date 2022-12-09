@@ -373,23 +373,14 @@ flex-wrap: wrap;
 
 .footer {
     background-color: var(--background-color-dark);
-   
-    height: 251px;
 }
 
 .container.foot {
     padding-top: 60px;
-    padding-bottom: 60px;
-    
-   
+   padding-bottom: 60px;
 }
 
 .logo-foot {
-
-    padding-top: 60px;
-    padding-bottom: 28px;
-
-   /* position: absolute; */
 
     color:var(--white);
     text-decoration: none;
@@ -398,30 +389,25 @@ flex-wrap: wrap;
     font-size: 26px;
     line-height: 1.2;
     letter-spacing: 0.03em;
+    
 }
 
+.contact {
+    margin-top: 20px;
 
+}
 
 .address {
     color: var(--address-colol);
 }
 
-.adr {
-    /* margin-right: 0;
-    margin-bottom: 0;
-    margin-left: 0; */
-    /* width: 231px; */
-       font-style: normal;
+address {
+    font-style: normal;
 }
+.sity-adr {
+    margin-bottom: 9px;
 
 
-.sity-adr { 
-    /* margin-top: 0;
-    margin-right: 0;
-    margin-bottom: 0;
-    margin-left: 0; */
-        
-    position: absolute;
 
     color: var(--white);
     font-size: 14px;
@@ -429,18 +415,16 @@ flex-wrap: wrap;
     letter-spacing: 0.03em;
 }
 
-/* .mail {
-    margin-bottom: 12px;
-} */
-
-.list.address{
+.list .address{
     font-weight: 400;
     font-size: 14px;
     line-height: 1.7;
     letter-spacing: 0.03em;
 }
 
-
+.mail {
+    margin-bottom: 9px;
+}
 
 /* Portfolio */ 
  .filters {
