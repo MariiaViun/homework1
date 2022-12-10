@@ -157,6 +157,8 @@ body {
 .section.hero {
     margin-left: auto;
     margin-right: auto;
+    padding-top: 200px;
+    padding-bottom: 200px;
 
     background-color: var(--background-color-dark);
     text-align: center;
@@ -284,6 +286,11 @@ body {
 
 /* Чим ми займаємось */
 
+.section.work {
+    padding-top: 0;
+}
+
+
 img {
     display: block;
     max-width: 100%;
@@ -307,21 +314,23 @@ img {
 }
 
 /* Section Наша команда */
+ 
+
 
 .list.team {
-display: flex;
-flex-wrap: wrap;
-
-/* outline: 1px solid darkolivegreen; */
+    display: flex;
+    flex-wrap: wrap;
 }
+
 
 .item-team {
     width: 270px;
     margin-right: 30px;
     
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 
+    0px 1px 1px rgba(0, 0, 0, 0.14), 
+    0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
-
 
 
     /* outline: 2px solid tomato; */
@@ -334,7 +343,6 @@ flex-wrap: wrap;
 .section.team {
     background-color: var(--background-color-secondary);
 }
-
 
 
 .name {
@@ -477,9 +485,7 @@ address {
     width: 370px;
     margin-right: 30px;
     margin-bottom: 30px;
-
-    border: 1px solid var(--border-project);
-    /* border: 1px solid #EEEEEE; */
+    
 }
 
 .project:nth-child(3n) {
@@ -498,6 +504,9 @@ address {
 
 .name-card {
     padding: 20px  24px;
+    border-right: 1px solid var(--border-project);
+    border-bottom: 1px solid var(--border-project);
+    border-left: 1px solid var(--border-project);
 }
 
 
