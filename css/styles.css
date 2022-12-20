@@ -24,8 +24,6 @@ body {
     color: var(--primary-text-color);
     font-family: Roboto, sans-serif;
     background-color: var(--white);
-
-    /* outline: 2px solid maroon; */
 }
 
 .container {
@@ -34,9 +32,6 @@ body {
     margin-right: auto;
     padding-left: 15px;
     padding-right: 15px;
-    
-
-/* outline: 2px solid blue; */
 }
 
 
@@ -61,12 +56,8 @@ body {
     padding: 0;
     margin: 0;
 }
-.logo {
-    /* padding-top: 60px;
-    padding-right: 1240px;
-    padding-bottom: 160px;
-    padding-left: 215px; */
 
+.logo {
     color: var(--logo-black);
     text-decoration: none;
     font-family: Raleway, sans-serif;
@@ -81,15 +72,13 @@ body {
 }
 
 /* Navigation */
+
 /* Main-nav */
 
 .main-nav {
     display: flex;
     align-items: center;
     justify-items: flex-end;
-    /* margin-top: 0;
-    margin-bottom: 0;
-    align-items: normal; */
 }
 
     /* Site-nav */
@@ -99,9 +88,6 @@ body {
     margin-left: 93px;
 }
 
-/* .site-nav .item {
-    outline: 1px solid magenta;
-} */
 
 .site-nav .item:not(:last-child) {
     margin-right: 50px;
@@ -119,14 +105,10 @@ body {
     line-height: 1.14;
     letter-spacing: 0.02em;
 
-    transition-property: color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.link.current {
-    color: var(--accent);
-}
+
 
 .site-nav .link:hover,
 .site-nav .link:focus,
@@ -137,7 +119,9 @@ body {
 
 .link.current {
     position: relative;
-    padding-bottom: 30px;
+    padding-bottom: 35px;  
+    margin-bottom: -1px;
+    color: var(--accent);
 }
 
 
@@ -158,7 +142,6 @@ body {
 .icon.smartphone,
 .icon.envelope {
     margin-right: 10px;
-    /* outline: 1px solid red; */
 }
 
 .mail-header,
@@ -172,18 +155,10 @@ body {
     fill: currentColor;
 }
 
-/* .envelope:hover,
-.smartphone:hover,
-.envelope:focus,
-.smartphone:focus {
-    fill: var(--accent);
-} */
-
 
 .auth-nav {
     display: flex;
     margin-left: auto;
-    /* outline: 1px solid tomato; */
 }
 
 .auth-nav .item + .item {
@@ -198,9 +173,7 @@ body {
     line-height: 1.14;
     letter-spacing: 0.02em;
 
-    transition-property: color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .auth-nav .link:hover,
@@ -220,9 +193,6 @@ body {
     padding-top: 200px;
     padding-bottom: 200px;
 
-    margin-right: auto;
-    margin-left: auto;
-
     max-width: 1600px;
     height: 600px;
  
@@ -232,27 +202,9 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     
-
-
-    /* background-color: var(--background-color-dark); */
     text-align: center;
 }
 
-
-
-/* .hero-image {
-    margin-right: auto;
-    margin-left: auto;
-
-    max-width: 1600px;
-    height: 600px;
-
-    background-image: url(../images/hero-img.jpg);
-
-     outline: 2px solid gold;
-    
-
-} */
 
 .hero-title {
     margin-left: auto;
@@ -286,18 +238,18 @@ body {
     letter-spacing: 0.06em;
     cursor: pointer;
     font-family: inherit;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 4px 4px rgba(8, 4, 4, 0.15);
 
-    transition-property: color, background-color, border;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: color 250ms cubic-bezier(0.4, 0, 0.2, 1), 
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), 
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button:focus,
 .button:hover{
     color: var(--color-title);
     background-color: var(--background-color-secondary);
-    border:1px solid  var(--button-bg);
+    border: 1px solid  var(--button-bg);
 }
 
 /* Main */
@@ -319,20 +271,16 @@ body {
   .section {
     padding-bottom: 94px;
     padding-top: 94px;
-    /* outline: 2px solid red; */
   }
 
 .container.feature {
     display: flex;
     flex-wrap: wrap;
-
-    /* background-color: teal; */
 }
 
 .feature-list {
     display: flex;
     flex-wrap: wrap;
-    /* background-color: teal; */
 }
 
 .feature-item {
@@ -420,8 +368,6 @@ img {
 .list.work {
     display: flex;
     flex-wrap: wrap;
-
-    /* outline: 2px solid teal; */
 }
 
 .image {
@@ -476,9 +422,6 @@ img {
     0px 1px 1px rgba(0, 0, 0, 0.14), 
     0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
-
-
-    /* outline: 2px solid tomato; */
 }
 
 .item-team:nth-child(4n) {
@@ -503,12 +446,6 @@ img {
 
 .name-team {
     padding: 30px 32px;
-  /* padding-top: 30px;
-  padding-bottom: 30px; */
-  /* padding-right: auto;
-  padding-left: auto; */
-  
-  /* outline: 2px solid gold; */
 }
 
 
@@ -518,8 +455,6 @@ img {
     line-height: 1.2;
     text-align: center;
     letter-spacing: 0.03em;
-    /* padding: 0 70px 30px 70px; */
-    
 }
 
 .socials-list {
@@ -544,11 +479,8 @@ img {
     border-radius: 50%;
     fill: var(--color-socials-icon);
 
-    transition-property: background-color, fill;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
-    /* background-color: tomato; */
+    transition-property: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), 
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .socials-link:hover,
@@ -570,15 +502,14 @@ img {
     border: 1px solid var(--color-socials-icon);
     border-radius: 3px;
 
-    transition-property: border-color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .item-clients:hover,
 .item-clients:focus {
     border-color: var(--accent);
 }
+
 .clients {
     display: flex;
     justify-content: center;
@@ -589,9 +520,7 @@ img {
 .clients-link {
     fill: var(--color-socials-icon);
 
-    transition-property: fill;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .clients-link:hover,
@@ -663,9 +592,7 @@ address {
     line-height: 1.7;
     letter-spacing: 0.03em;
 
-    transition-property: color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .mail {
@@ -693,9 +620,8 @@ address {
     fill: var(--white);
     background-color: var(--background-icon-footer);
 
-    transition-property: background-color, fill;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), 
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .socials-link.footer:hover,
@@ -735,17 +661,15 @@ address {
     min-width: 67px;
     text-align: center;
 
-    transition-property: background-color, color, border, border-radius, box-shadow;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), 
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1), 
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button-filter:hover,
 .button-filter:focus {
     color: var(--white);
     background-color: var(--accent);
-    border-radius: 4px;
-    border: 1px solid transparent;
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 
     0px 1px 2px rgba(0, 0, 0, 0.08), 
     0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -755,20 +679,14 @@ address {
 .list.proj {
     display: flex;
     flex-wrap: wrap;
-
-    /* background-color: tomato;
-    outline: 2px solid gold; */
 }
 
 .project {
-    /* position: relative; */
     width: 370px;
     margin-right: 30px;
     margin-bottom: 30px;
     
-    transition-property: box-shadow;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .project:hover,
@@ -780,7 +698,6 @@ address {
 
 .project:nth-child(3n) {
     margin-right: 0;
-    /* margin-bottom: 0; */
 }
 
 .name-project {
@@ -791,9 +708,6 @@ address {
     line-height: 2;
     letter-spacing: 0.06em;
 }
-
-
-
 
 .name-card {
    
@@ -834,9 +748,7 @@ address {
     letter-spacing: 0.03em;
     color: var(--white)
 
-    transition-property: transform;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }  
 
 .project:hover .text-overlay {
@@ -857,13 +769,14 @@ h2, p {
     width: 100%;
     height: 100%;
     background-color:var(--color-backdrop);
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 .backdrop.is-hidden {
     opacity: 0;
     pointer-events: none;
     visibility: hidden;
-
 }
 
 .modal {
@@ -896,5 +809,8 @@ h2, p {
     width: 100%;
     height: 100%;
     fill: var(--logo-black);
+}
 
+.button-modal {
+    cursor: pointer;
 }
