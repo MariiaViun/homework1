@@ -360,6 +360,12 @@
             </li>
         </ul>
        </div>
+       <div class="mail-input">
+        <h3 class="join-us">Підпишіться на розсилку</h3>
+        <label for="mail"></label>
+        <input type="email" name="mail" id="mail" placeholder="E-mail">
+        <button class="submit-footer" type="submit">Підписатися</button>
+       </div>
     </div> 
 </footer>
 <div class="backdrop is-hidden" data-modal>
@@ -369,6 +375,33 @@
                 <use href="./images/icons.svg#icon-close-black"></use>
             </svg>
         </button>
+        <form class="form-modal">
+            <h2 class="form-title">Залиште свої дані, ми вам передзвонимо</h2>
+            <div class="form-fieled">
+                <label for="name">Ім'я</label>
+                <input type="text" name="name" id="name" autofocus placeholder="">
+            </div>
+            <div class="form-fieled"> 
+                <label for="tel">Телефон</label>
+                <input type="tel" name="tel" id="tel" placeholder="tel">
+            </div> 
+            <div class="form-fieled"> 
+                <label for="mail">Пошта</label>
+                <input type="email" name="mail" id="mail" placeholder="">
+            </div> 
+            <div class="form-fieled textarea">
+                <p class="name-textarea">Коментар</p>
+                <textarea name="" id="" cols="30" rows="10" placeholder="Введіть текст"></textarea>
+            </div> 
+            <div class="form-fieled checkbox">
+                <input type="checkbox" name="consent" value="" id="consent">
+                <label for="consent">Погоджуюся з розсилкою та приймаю Умови договору</label>
+            </div>
+             <button class="submit-modal" type="submit">Відправити</button>
+
+
+
+        </form>
     </div>
  </div>
 
