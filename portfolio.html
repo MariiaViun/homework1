@@ -172,10 +172,9 @@
     </main>
     <footer class="footer">
         <div class="container foot">
-           
            <div class="contact">
              <a href="./index.html" class="logo-foot"><span class="logo-accent">Web</span>Studio</a>
-            <address>
+            <address class="address-footer">
             <p class="sity-adr">м. Київ, пр-т Лесі Українки, 26</p> 
             <ul class="list">
                 <li class="mail"><a href="mailto:info@devstudio.com" class="link address">info@devstudio.com</a></li>
@@ -216,11 +215,18 @@
                 </li>
             </ul>
            </div>
-           <div class="mail-input">
-            <h3 class="join-us">Підпишіться на розсилку</h3>
-            <label for="mail"></label>
-            <input type="email" name="mail" id="mail" placeholder="E-mail">
-            <button class="submit-footer" type="submit">Підписатися</button>
+            <div class="mail-input">
+                <h3 class="join-us">Підпишіться на розсилку</h3>
+                <div class="subscribe">
+                     <label for="mail"></label>
+                <input type="email" name="mail" id="mail" placeholder="E-mail">
+                    <button class="submit-footer" type="submit">Підписатися
+                    <svg class="icon-send" width="24" height="24">
+                        <use href="./images/icons.svg#icon-icon-send"></use>
+                    </svg>
+                </button>
+                </div>
+               
            </div>
         </div> 
     </footer>
